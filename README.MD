@@ -61,7 +61,7 @@ Edit
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/crm-opportunity-tracker.git
+
 cd crm-opportunity-tracker
 2. Install dependencies
 bash
