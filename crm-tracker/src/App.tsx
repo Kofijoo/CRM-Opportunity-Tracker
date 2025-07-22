@@ -1,10 +1,11 @@
+import Layout from './components/Layout';
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-600">
-        CRM Opportunity Tracker Ready!
-      </h1>
-    </div>
+    <Layout>
+      <h1 className="text-2xl font-bold">Welcome to your CRM Dashboard</h1>
+      <p className="text-gray-600 mt-2">Here’s what’s happening in your pipeline today.</p>
+    </Layout>
   );
 }
 
