@@ -1,12 +1,14 @@
-import Layout from './components/Layout';
+// src/App.tsx
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Dashboard from "./views/Dashboard";
 
-function App() {
+export default function App() {
   return (
     <Layout>
-      <h1 className="text-2xl font-bold">Welcome to your CRM Dashboard</h1>
-      <p className="text-gray-600 mt-2">Here’s what’s happening in your pipeline today.</p>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
     </Layout>
   );
 }
-
-export default App;
