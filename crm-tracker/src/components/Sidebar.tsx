@@ -65,8 +65,12 @@ export default function Sidebar() {
               }
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Icon size={18} className={({ isActive }) => isActive ? 'text-blue-600' : ''} />
-              <span>{label}</span>
+              {({ isActive }) => (
+                <>
+                  <Icon size={18} className={isActive ? 'text-blue-600' : ''} />
+                  <span>{label}</span>
+                </>
+              )}
             </NavLink>
           ))}
         </nav>
